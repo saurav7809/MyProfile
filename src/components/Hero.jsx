@@ -25,11 +25,6 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          {/* Greeting badge */}
-          <motion.div className="hero__badge" variants={fadeUp}>
-            <span className="hero__badge-dot" aria-hidden="true" />
-            Available for Internships & Opportunities
-          </motion.div>
 
           {/* Greeting */}
           <motion.p className="hero__greeting" variants={fadeUp}>
