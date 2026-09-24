@@ -14,7 +14,7 @@ export const portfolioConfig = {
 
   // ── Social Links ──────────────────────────────────────────
   github: "https://github.com/saurav7809",
-  linkedin: "https://linkedin.com/in/saurav-shah-1a2672230",
+  linkedin: "https://linkedin.com/in/saurav-shah-1a267223",
   website: "https://sauravshah.com.np",
 
   // ── Resume & Profile Image ────────────────────────────────
