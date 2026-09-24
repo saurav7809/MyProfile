@@ -1,0 +1,17 @@
+/* App-level styles — section backgrounds, alternating colors */
+
+.app {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+}
+
+/* ── Section alternating bg ── */
+#about    { background-color: var(--color-bg-secondary); }
+#skills   { background-color: var(--color-bg-primary); }
+#projects { background-color: var(--color-bg-secondary); }
+#education  { background-color: var(--color-bg-primary); }
+#experience { background-color: var(--color-bg-secondary); }
+#certifications { background-color: var(--color-bg-primary); }
+#achievements   { background-color: var(--color-bg-secondary); }
+#resume  { background-color: var(--color-bg-primary); }
+#contact { background-color: var(--color-bg-secondary); }

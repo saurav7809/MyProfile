@@ -1,0 +1,165 @@
+/* ── Education Section ── */
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education__card {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  gap: 0;
+}
+
+/* Left accent bar */
+.education__accent {
+  width: 4px;
+  background: var(--gradient-brand);
+  flex-shrink: 0;
+  border-radius: 0;
+}
+
+.education__content {
+  flex: 1;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header row */
+.education__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.education__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-purple-400);
+  flex-shrink: 0;
+}
+
+.education__title-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.education__degree {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.education__institution {
+  font-size: 1rem;
+  color: var(--color-purple-400);
+  font-weight: 500;
+}
+
+.education__cgpa {
+  text-align: center;
+  background: rgba(139,92,246,0.1);
+  border: 1px solid rgba(139,92,246,0.25);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  flex-shrink: 0;
+}
+
+.education__cgpa-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.education__cgpa-label {
+  display: block;
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+/* Meta */
+.education__meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.education__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.education__cgpa-placeholder {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-family: var(--font-mono);
+}
+
+/* Coursework */
+.education__coursework {}
+
+.education__coursework-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.education__coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Achievements */
+.education__achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.education__achievement-item {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  gap: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education__content { padding: 24px 20px; }
+  .education__header { flex-direction: column; gap: 12px; }
+  .education__cgpa { align-self: flex-start; }
+}

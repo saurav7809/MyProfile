@@ -1,0 +1,121 @@
+/* ── Resume Section ── */
+
+.resume .container {
+  max-width: 800px;
+}
+
+.resume__card {
+  padding: 64px 56px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background glow */
+.resume__glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(139,92,246,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Icon */
+.resume__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(139,92,246,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-purple-400);
+  position: relative;
+  z-index: 1;
+}
+
+/* Text */
+.resume__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.resume__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-purple-400);
+  justify-content: center;
+}
+
+.resume__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.resume__title-accent {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.resume__desc {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* Actions */
+.resume__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.resume__btn {
+  min-width: 160px;
+}
+
+/* Note */
+.resume__note {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  position: relative;
+  z-index: 1;
+}
+
+.resume__note code {
+  color: var(--color-purple-400);
+  background: rgba(139,92,246,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .resume__card { padding: 48px 28px; }
+  .resume__actions { flex-direction: column; align-items: center; }
+  .resume__btn { width: 100%; max-width: 280px; }
+}
+
+@media (max-width: 480px) {
+  .resume__card { padding: 40px 20px; }
+}
